@@ -61,7 +61,7 @@ nav .Right {
   border-width: 17px;
 }
 
-.hero {
+.container {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 50% 50%;
@@ -71,20 +71,83 @@ nav .Right {
   margin: 0 15%;
 }
 
-.hero .left-text {
+.container .left-text {
+  width: 50%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 120px;
-  font-size: 80px;
   font-weight: 400;
-  line-height: 70pt;
 }
 
-.hero .left-text .small-text {
-  font-size: 50px;
+.container .left-text .big-text {
+  font-size: 80px;
+}
+
+.container .left-text .small-text {
+  font-size: 40pt;
+  line-height: 0px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.hero .left-text .small-text .typing {
+.container .left-text .small-text .typing {
   color: #59A8FF;
+}
+
+.container .left-text .hero-buttons {
+  float: right;
+  padding-top: 30px;
+}
+
+.container .left-text .hero-buttons .Cv-button {
+  color: #000000;
+  font-family: "poppins";
+  font-size: 15pt;
+  font-weight: 300;
+  border-radius: 23px;
+  border-color: #ffffff00;
+  padding: 6px 25px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 1px #A915C5;
+          box-shadow: 0px 0px 0px 1px #A915C5;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  width: 200px;
+}
+
+.container .left-text .hero-buttons .Cv-button:hover {
+  border-color: #ffffff00;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 0px 1px #C626FF;
+  box-shadow: 0px 3px 0px 1px #A915C5;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.container .left-text .hero-buttons .Email-button {
+  color: #ffffff;
+  font-family: "poppins";
+  font-size: 15pt;
+  font-weight: 300;
+  border-radius: 23px;
+  border-color: #ffffff;
+  padding: 6px 5px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff00;
+  -webkit-box-shadow: 0px 0px 0px 1px #A915C5;
+          box-shadow: 0px 0px 0px 1px #A915C5;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  width: 200px;
+  margin-left: 16px;
+}
+
+.container .left-text .hero-buttons .Email-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 0px 1px #C626FF;
+  box-shadow: 0px 3px 0px 1px #A915C5;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 /*# sourceMappingURL=style.css.map */
