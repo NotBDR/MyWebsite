@@ -1,0 +1,93 @@
+    //--fonts--
+ 
+
+        //--fonts ends
+
+
+body{
+     background: rgb(37,17,87);
+     background-image: linear-gradient( to left ,#251156, #0D0825 );
+     color: rgb(255, 255, 255);
+     font-family: "Poppins";
+     
+    }
+    //---------------------------- nav bar --------------------//
+    nav{  
+        margin: 40px 15% 0 15%;       
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        img{
+            height: 40px;
+            
+               }
+
+        ul{
+            text-shadow: 0px 0px 10px rgba(206,206,206,0.43);
+            text-transform:capitalize;
+            font-size: larger;
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+            margin-left: 20PX;
+                li { 
+                padding-left:20PX ;
+            
+                a{
+                    text-decoration: none;
+                    color: aliceblue;    
+                    }
+               
+                    a:hover{
+                    box-shadow: rgba(133, 12, 117, 0.15) 0px 8px 3px;
+                    content: "";
+                    border-bottom:2px solid #7c4088;     
+                    padding: 4px 0;
+                    }    
+
+            }
+           
+          } 
+          .Right{
+                right: 0;
+                position: absolute;
+                width: 15%;
+                color: #ffffff1c;
+                border-bottom: dotted;
+                border-width: 17px;
+            }
+    }
+
+ 
+    //----------------------- nav bar ----------------------//
+
+
+
+    //----------------------- Hero ----------------------//
+    .hero{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        box-sizing: border-box;
+        margin: 0 15%;
+        .left-text{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 120px;
+            font-size:80px;
+            font-weight: 400;
+            line-height: 70pt;
+            .small-text{
+                
+                font-size: 50px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                .typing{
+                    color: #59A8FF;
+                }
+            }
+
+        }
+
+    }
+
+
+
+    //----------------------- Hero End ------------------//

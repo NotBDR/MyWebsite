@@ -1,0 +1,90 @@
+body {
+  background: #251157;
+  background-image: -webkit-gradient(linear, right top, left top, from(#251156), to(#0D0825));
+  background-image: linear-gradient(to left, #251156, #0D0825);
+  color: white;
+  font-family: "Poppins";
+}
+
+nav {
+  margin: 40px 15% 0 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav ul {
+  text-shadow: 0px 0px 10px rgba(206, 206, 206, 0.43);
+  text-transform: capitalize;
+  font-size: larger;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 20PX;
+}
+
+nav ul li {
+  padding-left: 20PX;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav ul li a:hover {
+  -webkit-box-shadow: rgba(133, 12, 117, 0.15) 0px 8px 3px;
+          box-shadow: rgba(133, 12, 117, 0.15) 0px 8px 3px;
+  content: "";
+  border-bottom: 2px solid #7c4088;
+  padding: 4px 0;
+}
+
+nav .Right {
+  right: 0;
+  position: absolute;
+  width: 15%;
+  color: #ffffff1c;
+  border-bottom: dotted;
+  border-width: 17px;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 15%;
+}
+
+.hero .left-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 120px;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 70pt;
+}
+
+.hero .left-text .small-text {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero .left-text .small-text .typing {
+  color: #59A8FF;
+}
+/*# sourceMappingURL=style.css.map */
