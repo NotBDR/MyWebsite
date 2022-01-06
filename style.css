@@ -64,15 +64,15 @@ nav .Right {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 15%;
+  margin: 0 10% 0 15%;
 }
 
 .container .left-text {
-  width: 50%;
+  grid-column: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 120px;
   font-weight: 400;
@@ -93,8 +93,8 @@ nav .Right {
 }
 
 .container .left-text .hero-buttons {
-  float: right;
-  padding-top: 30px;
+  padding-left: 20%;
+  padding-top: 19px;
 }
 
 .container .left-text .hero-buttons .Cv-button {
@@ -149,5 +149,13 @@ nav .Right {
   box-shadow: 0px 3px 0px 1px #A915C5;
   -webkit-transition: 200ms;
   transition: 200ms;
+}
+
+.container .right-ills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 /*# sourceMappingURL=style.css.map */

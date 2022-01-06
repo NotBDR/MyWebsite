@@ -66,11 +66,13 @@ body{
     //----------------------- Hero ----------------------//
     .container{
         display: grid;
-        grid-template-rows: 50% 50%;
+        grid-template-columns: 45% 55%;
         box-sizing: border-box;
-        margin: 0 15%;
+        margin: 0 10% 0 15%;
+        
         .left-text{
-            width: 50%;
+            grid-column: 0; 
+
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding-top: 120px;
             font-weight: 400;
@@ -87,8 +89,8 @@ body{
                 }
             }
             .hero-buttons{
-                float: right;
-                padding-top: 30px;
+                padding-left: 20%;
+                padding-top: 19px;
                 .Cv-button{
                     color: #000000;
                     font-family: "poppins";
@@ -138,9 +140,21 @@ body{
                 }
             
         }
+        .right-ills{
+            
+            display: flex;
+            grid-column: 2 ; 
+        }
 
     }
 
 
 
     //----------------------- Hero End ------------------//
+
+
+    //---------------------- footer --------------------//
+
+
+
+    //---------------------- end footer --------------------//
