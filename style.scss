@@ -35,13 +35,15 @@ body{
             
                 a{
                     text-decoration: none;
-                    color: aliceblue;    
+                    color: aliceblue;  
+                    border-bottom: #A915C5 ;
+  
                     }
                
                     a:hover{
-                    box-shadow: rgba(133, 12, 117, 0.15) 0px 8px 3px;
+                    transition-duration: 300ms;
+                    border-bottom: 2px solid #A915C5 ;
                     content: "";
-                    border-bottom:2px solid #7c4088;     
                     padding: 4px 0;
                     }    
 
@@ -84,8 +86,8 @@ body{
                 font-size: 40pt;
                 line-height: 0px;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                .typing{
-                    color: #59A8FF;
+                .typer{
+                    text-shadow: 2px 2px 11px rgba(0,0,0,0.29);
                 }
             }
             .hero-buttons{

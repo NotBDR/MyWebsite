@@ -42,13 +42,14 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: aliceblue;
+  border-bottom: #A915C5;
 }
 
 nav ul li a:hover {
-  -webkit-box-shadow: rgba(133, 12, 117, 0.15) 0px 8px 3px;
-          box-shadow: rgba(133, 12, 117, 0.15) 0px 8px 3px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  border-bottom: 2px solid #A915C5;
   content: "";
-  border-bottom: 2px solid #7c4088;
   padding: 4px 0;
 }
 
@@ -88,8 +89,8 @@ nav .Right {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container .left-text .small-text .typing {
-  color: #59A8FF;
+.container .left-text .small-text .typer {
+  text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.29);
 }
 
 .container .left-text .hero-buttons {
