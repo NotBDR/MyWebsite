@@ -45,6 +45,7 @@ body{
                     border-bottom: 2px solid #A915C5 ;
                     content: "";
                     padding: 4px 0;
+
                     }    
 
             }
@@ -68,12 +69,12 @@ body{
     //----------------------- Hero ----------------------//
     .container{
         display: grid;
-        grid-template-columns: 45% 55%;
+        grid-template-columns: 50% 50%;
         box-sizing: border-box;
         margin: 0 10% 0 15%;
         
         .left-text{
-            grid-column: 0; 
+            grid-column: 1; 
 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding-top: 120px;
@@ -143,9 +144,10 @@ body{
             
         }
         .right-ills{
-            
+            box-sizing: border-box;
             display: flex;
             grid-column: 2 ; 
+            margin-right:-20px ;
         }
 
     }

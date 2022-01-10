@@ -65,15 +65,16 @@ nav .Right {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 45% 55%;
-      grid-template-columns: 45% 55%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 10% 0 15%;
 }
 
 .container .left-text {
-  grid-column: 0;
+  -ms-grid-column: 1;
+  grid-column: 1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 120px;
   font-weight: 400;
@@ -153,10 +154,13 @@ nav .Right {
 }
 
 .container .right-ills {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-grid-column: 2;
   grid-column: 2;
+  margin-right: -20px;
 }
 /*# sourceMappingURL=style.css.map */
