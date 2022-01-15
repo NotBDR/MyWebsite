@@ -1,164 +1,208 @@
-    //--fonts--
- 
+//--fonts--
 
-        //--fonts ends
+//--fonts ends
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 870px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(37, 17, 87);
+  background-image: linear-gradient(to left, #251156, #0d0825);
+  color: rgb(255, 255, 255);
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+//---------------------------- nav bar --------------------//
+nav {
+  margin: 40px 15% 0 15%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 
+  img {
+    height: 40px;
+  }
 
-body{
-     background: rgb(37,17,87);
-     background-image: linear-gradient( to left ,#251156, #0D0825 );
-     color: rgb(255, 255, 255);
-     font-family: "Poppins";
-     
+  ul {
+    text-shadow: 0px 0px 10px rgba(206, 206, 206, 0.43);
+    text-transform: capitalize;
+    font-size: larger;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 20px;
+    li {
+      padding-left: 20px;
+
+      a {
+        text-decoration: none;
+        color: aliceblue;
+        border-bottom: #a915c5;
+      }
+
+      a:hover {
+        transition-duration: 300ms;
+        border-bottom: 2px solid #a915c5;
+        content: "";
+        padding: 4px 0;
+      }
     }
-    //---------------------------- nav bar --------------------//
-    nav{  
-        margin: 40px 15% 0 15%;       
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        img{
-            height: 40px;
-            
-               }
+  }
+  .Right {
+    right: 0;
+    position: absolute;
+    width: 15%;
+    color: #ffffff1c;
+    border-bottom: dotted;
+    border-width: 17px;
+  }
+}
+//----------------------- nav bar ----------------------//
 
-        ul{
-            text-shadow: 0px 0px 10px rgba(206,206,206,0.43);
-            text-transform:capitalize;
-            font-size: larger;
-            display: flex;
-            text-decoration: none;
-            list-style-type: none;
-            margin-left: 20PX;
-                li { 
-                padding-left:20PX ;
-            
-                a{
-                    text-decoration: none;
-                    color: aliceblue;  
-                    border-bottom: #A915C5 ;
-  
-                    }
-               
-                    a:hover{
-                    transition-duration: 300ms;
-                    border-bottom: 2px solid #A915C5 ;
-                    content: "";
-                    padding: 4px 0;
-
-                    }    
-
-            }
-           
-          } 
-          .Right{
-                right: 0;
-                position: absolute;
-                width: 15%;
-                color: #ffffff1c;
-                border-bottom: dotted;
-                border-width: 17px;
-            }
-    }
-
- 
-    //----------------------- nav bar ----------------------//
-
-
-
-    //----------------------- Hero ----------------------//
-    .container{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        box-sizing: border-box;
-        margin: 0 10% 0 15%;
-        
-        .left-text{
-            grid-column: 1; 
-
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding-top: 120px;
-            font-weight: 400;
-            .big-text{
-            font-size:80px;
-            }
-
-            .small-text{
-                font-size: 40pt;
-                line-height: 0px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                .typer{
-                    text-shadow: 2px 2px 11px rgba(0,0,0,0.29);
-                }
-            }
-            .hero-buttons{
-                padding-left: 20%;
-                padding-top: 19px;
-                .Cv-button{
-                    color: #000000;
-                    font-family: "poppins";
-                    font-size: 15pt;
-                    font-weight: 300;
-                    border-radius: 23px;
-                    border-color: #ffffff00;
-                    padding: 6px 25px;
-                    text-align: center;
-                    text-decoration: none;
-                    background-color: #ffffff;
-                    box-shadow: 0px 0px 0px 1px #A915C5;
-                    transition: 200ms;
-                    width: 200px;
-
-                }
-                .Cv-button:hover{
-                    border-color: #ffffff00;
-                    cursor: pointer;
-                    -webkit-box-shadow: 0px 3px 0px 1px #C626FF; 
-                    box-shadow: 0px 3px 0px 1px #A915C5;
-                    transition: 200ms;
-                }
-                
-                .Email-button{
-                        color: #ffffff;
-                        font-family: "poppins";
-                        font-size: 15pt;
-                        font-weight: 300;
-                        border-radius: 23px;
-                        border-color: #ffffff;
-                        padding: 6px 5px;
-                        text-align: center;
-                        text-decoration: none;
-                        background-color: #ffffff00;
-                        box-shadow: 0px 0px 0px 1px #A915C5;
-                        transition: 200ms;
-                        width: 200px;
-                        margin-left: 16px;
-                    }
-                    .Email-button:hover{
-                        cursor: pointer;
-                        -webkit-box-shadow: 0px 3px 0px 1px #C626FF; 
-                        box-shadow: 0px 3px 0px 1px #A915C5;
-                        transition: 200ms;
-                    }
-                }
-            
-        }
-        .right-ills{
-            box-sizing: border-box;
-            display: flex;
-            grid-column: 2 ; 
-            margin-right:-20px ;
-        }
-
+//----------------------- Hero ----------------------//
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-sizing: border-box;
+  margin: 0 10% 0 15%;
+  min-height: calc(100vh - (42px + 64.7px + 87px));
+  .left-text {
+    grid-column: 1;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 120px;
+    font-weight: 400;
+    .big-text {
+      font-size: 80px;
     }
 
+    .small-text {
+      font-size: 40pt;
+      line-height: 0px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      .typer {
+        text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.29);
+      }
+    }
+    .hero-buttons {
+      padding-left: 20%;
+      padding-top: 19px;
+      .Cv-button {
+        color: #000000;
+        font-family: "poppins";
+        font-size: 15pt;
+        font-weight: 300;
+        border-radius: 23px;
+        border-color: #ffffff00;
+        padding: 6px 25px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 0px 1px #a915c5;
+        transition: 200ms;
+        width: 200px;
+      }
+      .Cv-button:hover {
+        border-color: #ffffff00;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 3px 0px 1px #c626ff;
+        box-shadow: 0px 3px 0px 1px #a915c5;
+        transition: 200ms;
+      }
 
+      .Email-button {
+        color: #ffffff;
+        font-family: "poppins";
+        font-size: 15pt;
+        font-weight: 300;
+        border-radius: 23px;
+        border-color: #ffffff;
+        padding: 6px 5px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #ffffff00;
+        box-shadow: 0px 0px 0px 1px #a915c5;
+        transition: 200ms;
+        width: 200px;
+        margin-left: 16px;
+      }
+      .Email-button:hover {
+        cursor: pointer;
+        -webkit-box-shadow: 0px 3px 0px 1px #c626ff;
+        box-shadow: 0px 3px 0px 1px #a915c5;
+        transition: 200ms;
+      }
+    }
+  }
+  .right-ills {
+    box-sizing: border-box;
+    display: flex;
+    grid-column: 2;
+    margin-right: -20px;
+  }
+}
+//----------------------- Hero End ------------------//
 
-    //----------------------- Hero End ------------------//
+//---------------------- footer --------------------//
+footer {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  margin-top: -15px;
+}
 
+.line {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  left: 0;
+}
+.line-1 {
+  z-index: 15;
+  opacity: 0.5;
+}
+.line-2 {
+  z-index: 10;
+  opacity: 0.3;
+}
+.line-3 {
+  z-index: 5;
+  opacity: 0.3;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 200%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.wave1 {
+  background-size: 50% 80px;
+}
+.wave2 {
+  background-size: 50% 100px;
+  animation: animate 12s linear infinite;
+}
+.wave3 {
+  background-size: 50% 80px;
+  animation: animate 18s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.5);
+  }
+  0% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
 
-    //---------------------- footer --------------------//
-
-
-
-    //---------------------- end footer --------------------//
+//---------------------- end footer --------------------//
