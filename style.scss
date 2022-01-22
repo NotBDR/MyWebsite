@@ -162,7 +162,7 @@ footer {
 }
 .line-1 {
   z-index: 15;
-  opacity: 0.5;
+  opacity: 1;
 }
 .line-2 {
   z-index: 10;
@@ -204,5 +204,299 @@ footer {
     transform: translateX(-50%) translateZ(0) scaleY(1);
   }
 }
-
 //---------------------- end footer --------------------//
+.SM {
+  display: none;
+}
+
+@media only screen and (max-width: 1575px) {
+  .container {
+    .left-text {
+      padding-top: 120px;
+
+      .big-text {
+        .underscore {
+          display: none;
+        }
+      }
+    }
+    .right-ills {
+      margin-right: -100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1405px) {
+  .container {
+    grid-template-columns: 50% 60%; //
+    margin-right: 5%;
+    overflow: hidden;
+    .left-text {
+      .big-text {
+        .underscore {
+          display: none;
+        }
+      }
+      .hero-buttons {
+        padding-left: 10%; //
+      }
+    }
+    .right-ills {
+      margin-right: 0;
+      padding-right: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .container {
+    grid-template-columns: 50% 50%; //
+    overflow: hidden;
+    .left-text {
+      padding-top: 140px;
+
+      .big-text {
+        font-size: 65px;
+
+        .underscore {
+          display: none;
+        }
+      }
+      .small-text {
+        font-size: 45px;
+      }
+      .hero-buttons {
+        padding-left: 0%; //
+        .Cv-button {
+          font-size: 13pt;
+          width: 170px;
+        }
+        .Email-button {
+          font-size: 13pt;
+          width: 170px;
+        }
+      }
+    }
+    .right-ills {
+      margin-right: -50px;
+      margin-top: -50px;
+    }
+  }
+}
+@media only screen and (max-width: 955px) {
+  .container {
+    grid-template-columns: 50% 50%; //
+    overflow: hidden;
+    .left-text {
+      padding-top: 190px;
+
+      .big-text {
+        font-size: 50px;
+
+        .underscore {
+          display: none;
+        }
+      }
+      .small-text {
+        font-size: 40px;
+      }
+      .hero-buttons {
+        padding-left: 0%; //
+        .Cv-button {
+          font-size: 12pt;
+          width: 140px;
+          padding: 6px 5px;
+        }
+        .Email-button {
+          font-size: 12pt;
+          width: 140px;
+        }
+      }
+    }
+    .right-ills {
+      margin-right: -50px;
+      margin-top: -50px;
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  html {
+    margin: 0;
+    padding: 0;
+    min-height: 0px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: rgb(37, 17, 87);
+    background-image: linear-gradient(to left, #251156, #0d0825);
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+    box-sizing: border-box;
+  }
+  //---------------------------- nav bar --------------------//
+  nav {
+    margin: 40px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 40px;
+    }
+
+    ul {
+      text-shadow: 0px 0px 10px rgba(206, 206, 206, 0.43);
+      text-transform: capitalize;
+      font-size: larger;
+      display: none;
+      text-decoration: none;
+      list-style-type: none;
+      margin-left: 20px;
+      li {
+        padding-left: 20px;
+
+        a {
+          text-decoration: none;
+          color: aliceblue;
+          border-bottom: #a915c5;
+        }
+
+        a:hover {
+          transition-duration: 300ms;
+          border-bottom: 2px solid #a915c5;
+          content: "";
+          padding: 4px 0;
+        }
+      }
+    }
+    .Right {
+      display: none;
+      right: 0;
+      position: absolute;
+      width: 15%;
+      color: #ffffff1c;
+      border-bottom: dotted;
+      border-width: 17px;
+    }
+  }
+  //----------------------- nav bar ----------------------//
+
+  //----------------------- Hero ----------------------//
+  .container {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 50% 50%; //
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 0;
+    .left-text {
+      margin-left: 10%;
+      align-self: flex-start;
+      padding-top: 0px;
+      display: flex; //
+      flex-direction: column;
+      grid-row: 2; //
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      .big-text {
+        font-size: 65px;
+        text-align: left;
+      }
+
+      .small-text {
+        text-align: left;
+        font-size: 30pt;
+        line-height: 0px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        .typer {
+          text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.29);
+        }
+      }
+      .hero-buttons {
+        padding-left: 8%;
+        padding-top: 15px;
+        display: flex;
+        .Cv-button {
+          color: #000000;
+          font-family: "poppins";
+          font-size: 12pt;
+          font-weight: 300;
+          border-radius: 23px;
+          border-color: #ffffff00;
+          padding: 6px 5px;
+          text-align: center;
+          text-decoration: none;
+          background-color: #ffffff;
+          box-shadow: 0px 0px 0px 1px #a915c5;
+          transition: 200ms;
+          width: 140px;
+        }
+        .Cv-button:hover {
+          border-color: #ffffff00;
+          cursor: pointer;
+          -webkit-box-shadow: 0px 3px 0px 1px #c626ff;
+          box-shadow: 0px 3px 0px 1px #a915c5;
+          transition: 200ms;
+        }
+
+        .Email-button {
+          color: #ffffff;
+          font-family: "poppins";
+          font-size: 12pt;
+          font-weight: 300;
+          border-radius: 23px;
+          border-color: #ffffff;
+          padding: 6px 5px;
+          text-align: center;
+          text-decoration: none;
+          background-color: #ffffff00;
+          box-shadow: 0px 0px 0px 1px #a915c5;
+          transition: 200ms;
+          width: 140px;
+          margin-left: 16px;
+          margin-bottom: 10px;
+        }
+        .Email-button:hover {
+          cursor: pointer;
+          -webkit-box-shadow: 0px 3px 0px 1px #c626ff;
+          box-shadow: 0px 3px 0px 1px #a915c5;
+          transition: 200ms;
+        }
+      }
+    }
+    .right-ills {
+      box-sizing: border-box;
+      display: flex;
+      grid-row: 1;
+      margin-right: -20px;
+      margin-top: 10px;
+      grid-column: unset;
+    }
+  }
+  //----------------------- Hero End ------------------//
+
+  //---------------------- footer --------------------//
+  footer {
+    position: relative;
+    overflow: visible;
+    height: 100px;
+    margin-top: 11px;
+  }
+  .SM {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #241154;
+    .icons {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+      }
+    }
+  }
+}
